@@ -1,0 +1,6 @@
+# dsh-session-status bundle layer.
+# The Host entry is a no-op: this package exists for its browser half, and the
+# Loader entry is what makes dsh-client-modules publish that bundle.
+- insert:
+    - id: dsh-session-status
+      name: dsh-session-status

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Session Status Halo">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#141a36"/>
+      <stop offset="1" stop-color="#070a14"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#57d8ff"/>
+      <stop offset=".55" stop-color="#8a92ff"/>
+      <stop offset="1" stop-color="#3df2b1"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#9fb6ff" stroke-width="2">
+    <path d="M40 160h432M40 256h432M40 352h432"/>
+    <path d="M160 40v432M256 40v432M352 40v432"/>
+  </g>
+  <circle cx="256" cy="256" r="138" fill="none" stroke="#57d8ff" stroke-opacity=".16" stroke-width="10"/>
+  <circle cx="256" cy="256" r="138" fill="none" stroke="url(#ring)" stroke-width="10" stroke-linecap="round" stroke-dasharray="610 260" filter="url(#glow)" transform="rotate(-42 256 256)"/>
+  <circle cx="256" cy="256" r="104" fill="none" stroke="#8a92ff" stroke-opacity=".45" stroke-width="3" stroke-dasharray="14 18"/>
+  <circle cx="256" cy="256" r="46" fill="#0a1020" stroke="#3df2b1" stroke-width="6" filter="url(#glow)"/>
+  <path d="M232 258l18 19 33-40" fill="none" stroke="#3df2b1" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <circle cx="360" cy="150" r="9" fill="#57d8ff" filter="url(#glow)"/>
+  <circle cx="148" cy="366" r="6" fill="#8a92ff" filter="url(#glow)"/>
+</svg>

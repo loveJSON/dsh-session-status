@@ -1,0 +1,51 @@
+{
+  "name": "dsh-session-status",
+  "version": "0.3.0",
+  "description": "为 DeepSeek Harness 提供紧凑的全息会话状态胶囊，并可自动启动可拖动的 macOS 桌面浮窗。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "assets",
+    "docs",
+    "lib",
+    "locale/*.json",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "native"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session-status",
+    "desktop-pet",
+    "ui"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loveJSON/dsh-session-status.git"
+  },
+  "homepage": "https://github.com/loveJSON/dsh-session-status#readme",
+  "bugs": {
+    "url": "https://github.com/loveJSON/dsh-session-status/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "icon": "./assets/icon.svg",
+  "author": "dsh-session-status contributors"
+}

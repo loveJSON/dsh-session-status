@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Session Status Halo",
+    "description": "Show a compact session-status capsule above the composer, with a sidebar eye that toggles whichever surface is active. Detach it to a desktop pet and dock it back from the pet menu; the two surfaces never disagree or duplicate.",
+    "detail": "docs/DETAIL.md"
+  }
+}
